@@ -1,15 +1,11 @@
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
-    int n;
-    int x = 1;
-    printf("Enter the number: ");
-    scanf("%d", &n);
-    for(int i = 1; i <= n; i++)
+    for(int i = 100; i > 0; i -= 3)
     {
-        printf("%d ", x);
-        x += 2;
+        printf("%d ", i);
     }
     printf("\n");
     return 0;
