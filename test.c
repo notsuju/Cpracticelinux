@@ -2,14 +2,10 @@
 
 int main(void)
 {
-    int a = 2;
-    if (a = 5)
+    for(int i = 0; i < 100; i++)
     {
-        printf("Hello\n");
-    }
-    else
-    {
-        printf("Bye\n");
+        if((i+1) % 2 == 0)
+            printf("%d ", i + 1);
     }
     return 0;
 } 
