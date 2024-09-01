@@ -2,11 +2,16 @@
 
 int main()
 {
-    int i = 1;
-    while(i <= 100)
+    int x = 4,y = 0,z;
+    while(0)
     {
-        printf("%d \n", i);
-        i--;
-    }
+        if(x == y)
+            break;
+        else
+            printf("\n%d%d",x,y);
+            x--;
+            y++;
+    }   
+    printf("\n");
     return 0;
 }
