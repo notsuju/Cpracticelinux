@@ -6,9 +6,13 @@ int main()
     printf("Enter the number : ");
     scanf("%d", &a);
     int fac = 1;
-    for(int i = a; i > 0; i--)
+    for(int j = 1; j <= a; j++)
     {
-        fac *= i;
+        fac = 1;
+        for(int i = j; i > 0; i--)
+        {
+            fac *= i;
+        }
+    printf("%d! is : %d\n", j,fac);
     }
-    printf("The factorial is : %d\n", fac);
 }
