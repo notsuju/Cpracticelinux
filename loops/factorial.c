@@ -20,4 +20,5 @@ int main()
         fac *= i;
         printf("%d! : %d\n", i,fac);
     }
+    return 0;
 }

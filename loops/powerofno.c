@@ -13,4 +13,5 @@ int main()
         power *= a;
     }
     printf("The answer is : %d\n", power);
+    return 0;
 }

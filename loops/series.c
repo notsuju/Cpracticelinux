@@ -12,4 +12,5 @@ int main()
         else sum += i;
     }
     printf("Sum of the series is : %d\n", sum);
+    return 0;
 }
