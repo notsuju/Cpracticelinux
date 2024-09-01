@@ -2,10 +2,7 @@
 
 int main(void)
 {
-    for(int i = 0; i < 100; i++)
-    {
-        if((i+1) % 2 == 0)
-            printf("%d ", i + 1);
-    }
+    int a = 6/10;
+    printf("%d", a);
     return 0;
 } 
