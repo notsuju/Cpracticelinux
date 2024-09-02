@@ -9,7 +9,8 @@ int main()
     {
         for(int j = 65; j <= i+64; j++)
         {
-            printf("%c ", j);
+            if(i%2==0) printf("%c ", j);
+            else printf("%d ", j-64);
         }
         printf("\n");
     }
