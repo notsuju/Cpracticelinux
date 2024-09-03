@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    int a = 6/10;
-    printf("%d", a);
-    return 0;
+    int n;
+    printf("Enter the number of rows : ");
+    scanf("%d", &n);
 } 
