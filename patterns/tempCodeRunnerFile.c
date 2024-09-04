@@ -1,3 +1,4 @@
-else{
-            for(int j = 1; j <= n; j++) printf("* ");
-        }
+for(k = 1; k <= n; k++)
+            // {
+
+            // }
