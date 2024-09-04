@@ -5,7 +5,6 @@ int main()
     int n;
     printf("Enter the number of lines : ");
     scanf("%d", &n);
-    int z = 2*n - 1;
     int nsp = 1;
     for(int i = 1; i <= n; i++)
     {
@@ -23,4 +22,5 @@ int main()
          else for(int l = n; l >= i; l--) printf("* ");
          printf("\n");
     }
+    return 0;
 }
