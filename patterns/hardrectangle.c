@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+int minimum(int x, int y);
 int main()
 {
     int n;
@@ -15,10 +16,16 @@ int main()
             if(i > n) a = 2*n-i;
             int b = j;
             if(j > n) b = 2*n-j;
-            min = (a >= b)? b:a;
+            min = minimum(a,b); // calling function minimum
             printf("%d ", n+1-min);
         }
         printf("\n");
     }
     return 0;
+}
+
+int minimum(int x, int y)
+{
+    int m = (x >= y)? y:x;
+    return m;
 }
