@@ -13,5 +13,5 @@ int main()
 void greet()
 {
     printf("Good morning\n");
-    return;
+    return; // goes back to the function that called it
 }
