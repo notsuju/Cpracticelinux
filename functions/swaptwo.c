@@ -19,9 +19,9 @@ int main()
 
 void swap(int *x, int *y)
 {
-    *x = x + y;
-    *y = x - y;
-    *x = x - y;
+    *x = *x + *y; //without 
+    *y = *x - *y; //using extra
+    *x = *x - *y; //variable
     // int temp = *x;
     // *x = *y;
     // *y = temp;
