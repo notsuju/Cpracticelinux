@@ -14,15 +14,14 @@ int main()
 
 int highest_factor(int x, int y)
 {
-    int hcf;
     int min = (x > y)? y:x;
     for(int i = min; i >= 2; i--)
     {
         if(x%i == 0 && y%i == 0)
         {
-            hcf = i;
+            min = i;
             break;
         }
     }
-    return hcf;
+    return min;
 }
