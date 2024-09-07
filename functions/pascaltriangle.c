@@ -5,8 +5,12 @@
 int main()
 {
     int x;
-    printf("Enter the number of lines : ");
-    scanf("%d", &x);
+    do
+    {
+        printf("Enter the number of lines : ");
+        scanf("%d", &x);
+    } while(x <= 0);
+
     int c = x;
     int fir;
     for(int i = 0; i < x; i++)
