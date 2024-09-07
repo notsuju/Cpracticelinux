@@ -15,7 +15,7 @@ int main()
 int highest_factor(int x, int y)
 {
     int min = (x > y)? y:x;
-    for(int i = min; i >= 2; i--)
+    for(int i = min; i >= 1; i--)
     {
         if(x%i == 0 && y%i == 0)
         {
@@ -25,3 +25,21 @@ int highest_factor(int x, int y)
     }
     return min;
 }
+
+// int highest_factor(int x, int y) {
+//     // Ensure x is greater than or equal to y
+//     if (y > x) {
+//         int temp = x;
+//         x = y;
+//         y = temp;
+//     }
+
+//     // Euclidean algorithm
+//     while (y != 0) {
+//         int remainder = x % y;
+//         x = y;
+//         y = remainder;
+//     }
+//     return x;
+// }
+
