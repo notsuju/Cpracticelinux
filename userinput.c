@@ -10,9 +10,8 @@ int main()
     {
         size_t x = strlen(s); // gets the length of the s
         if (x > 0) s[x - 1] = '\0'; // checks if the length is more than 0 and if it is then replaces the '\n' with '\0'
-        printf("%d\n", x);
+        printf("%zu\n", x);
     }
     printf("Your name is : %s\n", s);
     return 0;
-} 
-
+}
