@@ -20,6 +20,6 @@ int main()
 int stair(int n)
 {
     if(n == 1) return 1;
-    if(n == 2) return 2;
+    if(n == 2) return 2; // do we even need this case.
     return stair(n-1) + stair(n-2);
 }
