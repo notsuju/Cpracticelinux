@@ -1,3 +1,4 @@
+// ONLY ALLOWED TO MOVE 1 OR 2 STEPS AT A TIME
 #include <stdio.h>
 
 int stair(int n);
