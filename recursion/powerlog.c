@@ -16,7 +16,7 @@ int main()
 int power_log(int a, int b)
 {
     if(b == 0) return 1;
-    int x = power_log(a, b/2); // FOR ODD CASES
-    if(b%2 == 1) return x * x * a; 
+    int x = power_log(a, b/2); 
+    if(b%2 == 1) return x * x * a; // FOR ODD CASES
     else return x * x;
 }
