@@ -16,6 +16,6 @@ int main()
 
 int maze(int a, int b)
 {
-    if(a == 1 || b == 1) return 1;
+    if(a == 1 || b == 1) return 1; // base case
     return maze(a - 1, b) + maze(a, b - 1);
 }
