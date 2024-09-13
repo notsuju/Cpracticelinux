@@ -11,6 +11,7 @@ int main()
     
     int a[size];
     int max;
+
     for (int i = 0; i < size; i++) // tried to take input and cal. max at the same time
     {
         printf("Enter the number : ");
@@ -18,6 +19,7 @@ int main()
         if (i == 0) max = a[i];
         max = (max < a[i])? a[i]:max;
     }
+    
     printf("%d is the maximum\n", max);
     return 0;
 }
