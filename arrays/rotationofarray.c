@@ -31,5 +31,5 @@ void reverse(int a[], int i, int j) // reversing a particular part of the array
         a[i] = a[j];
         a[j] = temp;
     }
-    return;
+    return; // as this function only has a side effect it does not returns any value
 }
