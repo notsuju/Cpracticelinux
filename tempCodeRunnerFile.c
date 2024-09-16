@@ -2,13 +2,17 @@
 
 int main()
 {
-    int a[5], sum = 0;
-    for(int i = 0; i < 5; i++)
+    int x;
+    int c = 0;
+    printf("Enter the number : ");
+    scanf("%d", &x);
+    int a[8] = {1,2,3,4,5,6,7,8};
+    for(int i = 0; i < 8; i++)
     {
-        printf("Enter the number : ");
-        scanf("%d", &a[i]);
-        sum += a[i];
+        for(int j = i+1; j < 8; j++)
+        {
+            if(x - a[i] == a[j]) c++;
+        }
     }
-    printf("Sum of array : %d", sum);
-    return 0;
+    printf("The number of pairs whose sum is %d is : %d\n", x,c);
 }
