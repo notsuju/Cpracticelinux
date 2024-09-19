@@ -27,7 +27,7 @@ int main()
     return 0;
 }
 
-// chatgpt version using an array as counting the times a element comes in the array
+// chatgpt version using an array to count the times a element comes in the array
 // #include <stdio.h>
 // #include <limits.h>
 
