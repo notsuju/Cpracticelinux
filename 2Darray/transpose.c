@@ -1,6 +1,5 @@
 // LEETCODE-867
 #include <stdio.h>
-
 #include <limits.h>
 
 #define ROWS 2
