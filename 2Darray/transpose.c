@@ -7,8 +7,16 @@
 
 int main()
 {
-    int a[ROWS][COLUMNS] = {{2,3,5}, {6,7,8}};
-    int r = 0;
+    int a[ROWS][COLUMNS];
+    for(int i = 0; i < ROWS; i++)
+    {
+        for(int j = 0; j < COLUMNS; j++)
+        {
+            printf("Enter a number : ");
+            scanf("%d", &a[i][j]);
+        }
+    }
+    //int a[ROWS][COLUMNS] = {{2,3,5}, {6,7,8}};
     for(int i = 0; i < COLUMNS; i++)
     {
         for(int j = 0; j < ROWS; j++)
