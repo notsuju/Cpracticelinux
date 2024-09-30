@@ -38,7 +38,7 @@ int main()
     // error handling
     if(n != p)
     {
-        printf("Error columns of first matrix and rows of second don't match!")
+        printf("Error columns of first matrix and rows of second don't match!\n");
         return 1;
     }
 
@@ -51,6 +51,7 @@ int main()
     {
         for(int j = 0; j < q; j++)
         {
+            // interested in ith row of a and jth column of b
             sum = 0;
             x = 0;
             while(x < n)
@@ -64,6 +65,7 @@ int main()
 
 
     // Printing of the resulting array
+    printf("\nThe multiplied matrix is : \n");
     for(int i = 0; i < m; i++)
     {
         for(int j = 0; j < q; j++)
