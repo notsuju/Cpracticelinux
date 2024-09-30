@@ -2,14 +2,14 @@
 
 int main()
 {
-    // first matrix
+    // first matrix input
     int m,n;
     printf("Enter the number of rows for 1st matrix : ");
     scanf("%d", &m);
     printf("Enter the number of columns for 1st matrix : ");
     scanf("%d", &n);
     int a[m][n];
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < m; i++)
     {
         for(int j = 0; j < n; j++)
         {
@@ -17,50 +17,61 @@ int main()
             scanf("%d", &a[i][j]);
         }
     }
-    // second matrix
+
+    // second matrix input
     int p,q;
     printf("Enter the number of rows for 2nd matrix : ");
     scanf("%d", &p);
     printf("Enter the number of columns for 2nd matrix : ");
     scanf("%d", &q);
     int b[p][q];
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i < p; i++)
     {
-        for(int j = 0; j < n; j++)
+        for(int j = 0; j < q; j++)
         {
             printf("Enter a number for place (%d,%d) : ", i,j);
-            scanf("%d", &a[i][j]);
+            scanf("%d", &b[i][j]);
         }
     }
-    // error handling
-    if(n != p) return 1;
 
-    // actual multiplication
-    int pr[m][q];
-    int sum;
+
+    // error handling
+    if(n != p)
+    {
+        printf("Error columns of first matrix and rows of second don't match!")
+        return 1;
+    }
+
+
+    // multiplication calculation
+    int r[m][q];
+    int sum = 0;
+    int x;
     for(int i = 0; i < m; i++)
     {
         for(int j = 0; j < q; j++)
         {
             sum = 0;
-            for(int k = 0; k < n; k++)
+            x = 0;
+            while(x < n)
             {
-                for(int l = 0; l < p; l++)
-                {
-                    sum += a[i][k] * b[l][j];
-                    pr[i][j] = sum;
-                }
+                sum += a[i][x] * b[x][j];
+                x++;
             }
+            r[i][j] = sum;
         }
     }
 
+
+    // Printing of the resulting array
     for(int i = 0; i < m; i++)
     {
         for(int j = 0; j < q; j++)
         {
-            printf("%d ", pr[i][j]);
+            printf("%d ", r[i][j]);
         }
         printf("\n");
     }
+
     return 0;
 }
