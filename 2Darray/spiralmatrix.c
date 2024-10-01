@@ -4,9 +4,9 @@
 int main()
 {
     int r,c;
-    printf("Enter the number of rows for 1st matrix : ");
+    printf("Enter the number of rows for matrix : ");
     scanf("%d", &r);
-    printf("Enter the number of columns for 1st matrix : ");
+    printf("Enter the number of columns for matrix : ");
     scanf("%d", &c);
     int a[r][c];
     for(int i = 0; i < r; i++)
@@ -23,28 +23,28 @@ int main()
     int minc = 0;
     int maxc = c-1;
     int counter = 0;
+    int total = r*c;
     while(counter < r*c)
     {
-        // 
-        for(int i = minc; i <= maxc; i++)
+        for(int i = minc; i <= maxc && counter < total; i++)
         {
             printf("%d ", a[minr][i]);
             counter++;
         }
         minr++;
-        for(int i = minr; i <= maxr; i++)
+        for(int i = minr; i <= maxr && counter < total; i++)
         {
             printf("%d ", a[i][maxc]);
             counter++;
         }
         maxc--;
-        for(int i = maxc; i >= minc; i--)
+        for(int i = maxc; i >= minc && counter < total; i--)
         {
             printf("%d ", a[maxr][i]);
             counter++;
         }
         maxr--;
-        for(int i = maxr; i >= minr; i--)
+        for(int i = maxr; i >= minr && counter < total; i--)
         {
             printf("%d ", a[i][minc]);
             counter++;
