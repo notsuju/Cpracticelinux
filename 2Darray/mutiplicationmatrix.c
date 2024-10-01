@@ -18,6 +18,8 @@ int main()
         }
     }
 
+    printf("\n");
+    
     // second matrix input
     int p,q;
     printf("Enter the number of rows for 2nd matrix : ");
