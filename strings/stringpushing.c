@@ -7,7 +7,7 @@ int main()
     char ch;
     printf("Enter the index at which shifting happens : ");
     scanf("%d", &c);
-    if(c < 0 || c > 7)
+    if(c < 0 || c > 6)
     {
         printf("ERROR");
         return 0;
