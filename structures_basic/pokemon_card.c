@@ -71,7 +71,6 @@ int main()
     printf("\n");
 
     if(p1 > p2) printf("Player 1 won!\n");
-    else if (p2 < p1) printf("Player 2 won!\n");
     else printf("Its a tie!\n");
     return 0;
 }
