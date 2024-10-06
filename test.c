@@ -2,12 +2,15 @@
 #include <string.h>
 
 int main() {
-    char ch;
+    // char ch;
 
-    printf("Enter a single character: ");
-    scanf(" %c", &ch); // Note the space before %c to skip any whitespace
+    // printf("Enter a single character: ");
+    // scanf(" %c", &ch);
 
-    printf("You entered: %c\n", ch);
+    // printf("You entered: %c\n", ch);
+    int x;
+    int y = scanf("%d", &x);
+    printf("%d\n", y);
     return 0;
 }
 
