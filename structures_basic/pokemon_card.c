@@ -68,8 +68,6 @@ int main()
     if(pokemon[0].speed > pokemon[1].speed) p1++;
     else p2++;
 
-    printf("\n");
-
     if(p1 > p2) printf("Player 1 won!\n");
     return 0;
 }
