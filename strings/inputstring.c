@@ -1,14 +1,20 @@
 #include <stdio.h>
 #include <string.h>
+//#include "suju.h"
 
+void string_get(char* p, size_t size);
 int main()
 {
-    char a[10];
+    char a[20];
     printf("Enter your name : ");
-    fgets(a, sizeof(a), stdin);
-    size_t len  = strlen(a);
-    if(a[len-1] == '\n') a[len-1] = '\0';
-    printf("%zu \n", len);
+    string_get(a, sizeof(a));
     printf("Your name is : %s\n", a);
     return 0;
+}
+
+void string_get(char* p, size_t size)
+{
+    fgets(p, size, stdin);
+    size_t len  = strlen(p);
+    if(p[len-1] == '\n') p[len-1] = '\0'; 
 }
