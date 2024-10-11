@@ -5,7 +5,7 @@
 // #define MAX_SIZE 10
 int main()
 {
-    int a[ARRAY_SIZE] = {1,2,1,3,4,5,6};
+    int a[ARRAY_SIZE] = {1,2,2,3,4,5,6};
 
     // Method 1 with time complexity big O(n^2) & space complexity O(1)
     // for(int i = 0; i < ARRAY_SIZE - 1; i++)
