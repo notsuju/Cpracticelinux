@@ -19,7 +19,7 @@ int main()
         printf("Error allocating memory\n");
         return 2;
     }
-    
+
     // Taking array as input
     for(int i = 0; i < n; i++)
     {
