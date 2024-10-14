@@ -6,7 +6,7 @@
 void swap(int* a, int* b);
 int main()
 {
-    int arr[ARRAY_SIZE] = {9,1,3,4,10,5,6};
+    int arr[ARRAY_SIZE] = {9,1,3,19,10,5,6};
     int no_of_swaps;
     int last_index_to_be_sorted = ARRAY_SIZE - 1;
     for(int i = 0; i < ARRAY_SIZE - 1; i++)
