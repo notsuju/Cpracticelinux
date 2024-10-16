@@ -8,4 +8,4 @@
 void getstr(char *p, size_t size);
 void swap(int *a, int *b);
 
-#endif // SUJU_H
+#endif // SUJU_H // use by gcc code.c suju.c -o code
