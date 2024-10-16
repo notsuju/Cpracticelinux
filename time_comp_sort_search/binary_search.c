@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 // Time complexity of O(n)
+void swap(int* a, int* b);
+void bubble_sort(int arr[], int n);
 int main()
 {
     // Taking size of array as input
@@ -32,6 +34,8 @@ int main()
     printf("Enter the number to be searched : ");
     scanf("%d", &s);
 
+    // Sorting the array via bubble sort
+    bubble_sort(arr, n);
     // BInary search algorithm
     int half_max = n - 1;
     int half_min = 0;
@@ -49,10 +53,40 @@ int main()
         else half_max = mid - 1; // GO left
     };
     if(found == -1) printf("Error searching\n");
-    else printf("Found at index %d\n", found);
+    // else printf("Found at index %d\n", found);
+    else printf("%d exist in the given array\n", s);
 
     // Freeing allocated memory
     free(arr);
     arr = NULL;
     return 0;
+}
+
+void bubble_sort(int arr[], int n)
+{
+    int no_of_swaps;
+    int last_index_to_be_sorted = n - 1;
+    for(int i = 0; i < n - 1; i++)
+    {
+        no_of_swaps = 0;
+        for(int j = 0; j < last_index_to_be_sorted; j++)
+        {
+            if(arr[j] > arr[j+1])
+            {
+                swap(&arr[j], &arr[j+1]);
+                no_of_swaps++;
+            }
+        }
+        if(no_of_swaps == 0) break; // means that the array is sorted
+        last_index_to_be_sorted--; // as on every iteration it is must that the highest number is at last
+    }
+    return;
+}
+
+void swap(int* a, int* b)
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    return;
 }
