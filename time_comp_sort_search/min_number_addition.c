@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "suju.h"
 
+// Program to find the two smallest numbers made out of all the elements of array and finding the sum of them
+
 #define ARRAY_SIZE 5
 void bubble_sort(int arr[], int size); // sorts the array
 int array_to_number(int crr[], int size); // turns array into a number
