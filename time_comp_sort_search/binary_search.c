@@ -51,6 +51,7 @@ int main()
         }
         if(arr[mid] < s) half_min = mid + 1; // GO right
         else half_max = mid - 1; // GO left
+        // REPEAT
     };
     if(found == -1) printf("Error searching\n");
     // else printf("Found at index %d\n", found);

@@ -5,7 +5,7 @@
 #define ARRAY_SIZE 9
 int main()
 {
-    int arr[ARRAY_SIZE] = {5,0,2,0,0,4,1,3,0};
+    int arr[ARRAY_SIZE] = {5,0,2,0,0,4,1,3,0}; // basically bubble sort but with 0's if arr[] == 0 then move up
     int no_of_swap = 0;
     int last_index_swaped = ARRAY_SIZE - 1;
     for(int i = 0; i < ARRAY_SIZE - 1; i++)
