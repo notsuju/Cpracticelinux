@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 #include "suju.h"
 
 #define ARRAY_SIZE 5
