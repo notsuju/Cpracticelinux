@@ -2,29 +2,29 @@
 
 int main()
 {
-    float a,b;
+    float a, b;
     printf("Enter the first number : ");
     scanf("%f", &a);
     printf("Enter the second number : ");
     scanf("%f", &b);
     char operator;
-    printf("Enter the operator to be used : ");
+    printf("Enter the operator to be used(+,-,*,/) : ");
     scanf(" %c", &operator);
-    switch(operator)
+    switch (operator)
     {
-        case '+':
-        printf("Sum of the numbers is : %.6f", a+b);
+    case '+':
+        printf("Sum of the numbers is : %.6f", a + b);
         break;
-        case '-':
-        printf("Difference of the numbers is : %.6f", a-b);
+    case '-':
+        printf("Difference of the numbers is : %.6f", a - b);
         break;
-        case '*':
-        printf("Multiplication of the numbers is : %.3f", a*b);
+    case '*':
+        printf("Multiplication of the numbers is : %.3f", a * b);
         break;
-        case '/':
-        printf("Division of the numbers is : %.3f", a/b);
+    case '/':
+        printf("Division of the numbers is : %.3f", a / b);
         break;
-        default:
+    default:
         printf("Error Invalid operator");
     }
     printf("\n");
