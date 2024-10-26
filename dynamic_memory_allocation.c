@@ -13,6 +13,7 @@ int main()
     //     printf("%d ", arr[i]);
     // }
 
+    // Dynamically taking string input through the user.
     n = n + 1; // as fgets only reads till n - 1 and leaves one for '\0'
     getchar(); // removes '\n' from input buffer
     char *name = (char*)malloc(n*sizeof(char));
@@ -23,5 +24,6 @@ int main()
     printf("Your name is : %s", name);
     printf("\n");
     free(name);
+    name = NULL;
     return 0;
 }
