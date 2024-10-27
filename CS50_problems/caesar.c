@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include "suju.h"
 
-void rotate(char user_text[], int key);
+void rotate(char *user_text, int key);
 int main(int argc, char *argv[])
 {
     // Error Handling
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
         if(!isdigit(argv[1][i]))
         {
             printf("Error: Usage ./caesar KEY\n");
-            return 3;
+            return 2;
         }
     }
 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     if(key < 0) 
     {
         printf("Error: key should be non-negative\n");
-        return 2;
+        return 3;
     }
 
     // Taking string input
@@ -51,7 +51,7 @@ void rotate(char *user_text, int key)
     {
         if(isalpha(user_text[i]) != 0)
         {
-            char base = (islower(user_text[i])) ? 'a' : 'A';
+            char base = (islower(user_text[i])) ? 'a' : 'A'; // for setting a to z values to 0-25
             user_text[i] = ((user_text[i] - base + key) % 26) + base;
         }
     }
