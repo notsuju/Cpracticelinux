@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
     }
 
     // Taking string input
-    char user_text[50];
+    char user_text[104];
     printf("Plain Text : ");
-    getstr(user_text, 50);
+    getstr(user_text, 104);
 
     // Rotating the alphabet by key places
     rotate(user_text, key);
