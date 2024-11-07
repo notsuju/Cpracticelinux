@@ -8,7 +8,7 @@ int main()
     printf("Enter the text to be written(ctrl + D to finish input on Unix or ctrl + Z for windows): "); // ctrl + d sends a EOF signal
 
     FILE *ptr = fopen("writing_test.txt", "w");
-
+    
     // Check if file was opened successfully
     if (ptr == NULL)
     {
