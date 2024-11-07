@@ -25,5 +25,8 @@ int main()
     printf("\n");
     free(name);
     name = NULL;
+
+    // Re-allocation is done by using ptr = realloc(ptr, 10 * sizeof(int));
+    // Note the data is not lost during reallocation just memory increases
     return 0;
 }
