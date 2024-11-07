@@ -5,7 +5,7 @@ int main()
     char buffer[100];
 
     // Ask for user input
-    printf("Enter the text to be written("ctrl + D" to finish input on Unix or "ctrl + Z" for windows): "); // ctrl + d sends a EOF signal
+    printf("Enter the text to be written(ctrl + D to finish input on Unix or ctrl + Z for windows): "); // ctrl + d sends a EOF signal
 
     FILE *ptr = fopen("writing_test.txt", "w");
 
@@ -17,7 +17,7 @@ int main()
     }
 
     // Read input from stdin (keyboard) into the buffer
-    while(fgets(buffer, sizeof(buffer), stdin) != NULL)
+    while (fgets(buffer, sizeof(buffer), stdin) != NULL)
     {
         fputs(buffer, ptr);
     }
