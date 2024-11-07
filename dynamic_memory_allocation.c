@@ -4,7 +4,7 @@
 int main()
 {
     int n;
-    printf("Enter the no. of elements your name : ");
+    printf("Enter the no. of words in your name : ");
     scanf("%d", &n);
     // Dynamically Allocating memory for array(NOT USING VLA)
     // int *arr = (int*)calloc(n * sizeof(int));
