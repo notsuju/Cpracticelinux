@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     size_t len = strlen(argv[1]);
     int counter[123] = {0};
 
-    // Error Handling 2
+    // Error Handling 2 ok
     if(len != 26)
     {
         printf("Error : key could only contain 26 letters\n");
