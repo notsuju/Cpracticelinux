@@ -4,7 +4,7 @@
 int main()
 {
     int n;
-    printf("Enter the no. of elements your name : ");
+    printf("Enter the no. of words in your name : ");
     scanf("%d", &n);
     // Dynamically Allocating memory for array(NOT USING VLA)
     // int *arr = (int*)calloc(n * sizeof(int));
@@ -25,5 +25,8 @@ int main()
     printf("\n");
     free(name);
     name = NULL;
+
+    // Re-allocation is done by using ptr = realloc(ptr, 10 * sizeof(int));
+    // Note the data is not lost during reallocation just memory increases
     return 0;
 }

@@ -1,0 +1,2 @@
+this is cs50 and you are watching me.
+this is the second line so how will fgets read it.
