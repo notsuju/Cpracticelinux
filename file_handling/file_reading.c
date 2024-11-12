@@ -10,7 +10,8 @@ int main()
         printf("Error opening file\n");
         return 1;
     }
-
+    
+    fseek(ptr, 0, SEEK_SET);
     while(fgets(buffer, sizeof(buffer),ptr) != NULL)// ptr NULL means end of file
     {
         printf("Read line is : %s", buffer);// this is line by line reading
