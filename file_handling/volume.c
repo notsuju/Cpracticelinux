@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
         fwrite(&buffer, sizeof(int16_t), 1, output);
     }
 
+    // Closing the files
     fclose(input);
     fclose(output);
     return 0;
