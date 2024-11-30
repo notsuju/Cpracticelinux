@@ -8,9 +8,13 @@ int main() {
     // scanf(" %c", &ch);
 
     // printf("You entered: %c\n", ch);
-    int x;
-    printf("Enter a number : ");
-    int y = scanf("%d", &x);
-    printf("%d\n", y);
+    // int x;
+    // printf("Enter a number : ");
+    // int y = scanf("%d", &x);
+    // printf("%d\n", y);
+    // return 0;
+    char r;
+    r = getchar();
+    printf("%c\n", r);
     return 0;
 }

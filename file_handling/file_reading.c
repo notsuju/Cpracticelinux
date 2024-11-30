@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -15,6 +16,7 @@ int main()
     while(fgets(buffer, sizeof(buffer),ptr) != NULL)// ptr NULL means end of file
     {
         printf("Read line is : %s", buffer);// this is line by line reading
+        printf("Line length : %zu\n", strlen(buffer));
     }
     fclose(ptr);
     return 0;
