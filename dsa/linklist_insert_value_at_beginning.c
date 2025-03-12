@@ -10,6 +10,7 @@ typedef struct Node
 Node *head;
 void insert_at_beginning(int value);
 void printList();
+void free_memory();
 int main()
 {
     head = NULL;
@@ -24,6 +25,7 @@ int main()
         insert_at_beginning(x);
     }
     printList();
+    free_memory();
     return 0;
 }
 
@@ -40,6 +42,7 @@ void insert_at_beginning(int value)
     head = newnode;
 }
 
+// Printing requires transversing of the list
 void printList()
 {
     printf("The list is : ");
@@ -50,5 +53,17 @@ void printList()
         temp = temp->next;
     }
     printf("NULL\n");
+    return;
+}
+
+void free_memory()
+{
+    Node *temp = head;
+    while(temp != NULL)
+    {
+        Node *next = temp->next;
+        free(temp);
+        temp = next; 
+    }
     return;
 }

@@ -13,10 +13,11 @@ Node *tail;
 Node *newnode(int value);
 void insert_end(int value);
 void printList();
-
+void free_memory();
 int main()
 {
     head = NULL;
+    tail = NULL;
     int n;
     printf("How many numbers in the list : ");
     scanf("%d", &n);
@@ -28,6 +29,7 @@ int main()
         insert_end(x);
     }
     printList();
+    free_memory();
     return 0;
 }
 
@@ -78,5 +80,17 @@ void printList()
         temp = temp->next;
     }
     printf("NULL\n");
+    return;
+}
+
+void free_memory()
+{
+    Node *temp = head;
+    while(temp != NULL)
+    {
+        Node *next = temp->next;
+        free(temp);
+        temp = next; 
+    }
     return;
 }
